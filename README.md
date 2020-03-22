@@ -12,3 +12,8 @@ and then run it with the respective IP address and port:
 $ ./vortex 176.9.9.172 5842
 ```
 et voilà you'll get the credentials for the ssh server...
+
+<dl>
+  <dt>Note</dt>
+  <dd>The executable takes the host's IP address <b>not</b> the host's name as the first parameter!</dd>
+</dl>
