@@ -6,7 +6,7 @@
 #include <arpa/inet.h>
 
 #define BUFFER_SIZE 256
-#define NO_OF_BYTES 16   // 16 = 4 * sizeof(uint32_t) = 16 bytes. recv returns the number of bytes received
+#define NO_OF_BYTES 16   // 16 = 4 * sizeof(uint32_t) = 16 bytes. recv() returns the number of bytes received
 
 int main(int argc, char *argv[])
 {
