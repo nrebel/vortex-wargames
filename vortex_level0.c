@@ -16,8 +16,8 @@ int main(int argc, char *argv[])
   char buffer[BUFFER_SIZE];
   
   if (argc < 3) {
-      fprintf(stderr,"usage %s <host ip> <port>\n", argv[0]);
-      return 1;
+    fprintf(stderr,"usage: %s <host ip> <port>\n", argv[0]);
+    return 1;
   }
 
   server.sin_family = AF_INET;
@@ -55,7 +55,6 @@ int main(int argc, char *argv[])
     perror("recv(): ");
     return 1;
   }
-
   printf("Response from server: %s\n", buffer);
 
   close(sockfd);
